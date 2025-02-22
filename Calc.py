@@ -5,25 +5,25 @@ def main(input: str):
         return "throws Exception"
 
     try:
-        first_operator = int(split_input_str[0])
-        second_operator = int(split_input_str[2])
-        operand = split_input_str[1]
+        first_operand = int(split_input_str[0])
+        second_operand = int(split_input_str[2])
+        operator = split_input_str[1]
 
     except ValueError:
         return "throws Exception"
 
-    if not(1 <= first_operator <= 10 and 1 <= second_operator <= 10):
+    if not(1 <= first_operand <= 10 and 1 <= second_operand <= 10):
         return "throws Exception"
 
 
-    if operand == '+':
-        return str(first_operator + second_operator)
-    elif operand == '-':
-        return str(first_operator - second_operator)
-    elif operand == '*':
-        return str(first_operator * second_operator)
-    elif operand == '/':
-        return str(first_operator // second_operator)
+    if operator == '+':
+        return str(first_operand + second_operand)
+    elif operator == '-':
+        return str(first_operand - second_operand)
+    elif operator == '*':
+        return str(first_operand * second_operand)
+    elif operator == '/':
+        return str(first_operand // second_operand)
     else:
         return "throws Exception"
 
